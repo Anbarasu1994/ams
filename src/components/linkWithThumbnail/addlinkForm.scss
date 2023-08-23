@@ -1,0 +1,53 @@
+.add-link-form {
+    max-width: 400px;
+    margin: 0 auto;
+    // color:white;
+    
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    color:white;
+
+    }
+  
+    form {
+    // color:white;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+      }
+      input{
+        color: black;
+      }
+  
+      input[type="text"],
+      textarea {
+        color: black;
+
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+  
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  

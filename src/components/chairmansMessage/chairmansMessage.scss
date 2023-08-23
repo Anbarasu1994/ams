@@ -1,0 +1,48 @@
+.chairman-wrapper {
+  .chairman-1 {
+    margin-top: 10%;
+    display: flex;
+
+    .vertical-line2 {
+      margin-left: 2%;
+      margin-top: 3%;
+      width: 70px;
+      height: 300px;
+      background-color: #f7b322;
+    }
+    .vertical-line3 {
+      margin-top: 5%;
+      width: 10px;
+      height: 250px;
+      background-color: #fff;
+    }
+    .chairman-logo {
+      img {
+        margin-left: 6%;
+
+        width: 314px;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 10%;
+      }
+    }
+    .chairmanMsg {
+      margin-left: 4%;
+
+      .chairman-title {
+        h3 {
+          margin-left: 5%;
+          color: #fff !important;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 600;
+          // line-height: 62px; /* 103.333% */
+          animation: bubbleAnimation 2s ease-in-out;
+        }
+        .message {
+        }
+      }
+    }
+  }
+}

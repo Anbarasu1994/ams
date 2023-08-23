@@ -1,0 +1,121 @@
+.activities-wrapper {
+  margin-top: 10%;
+  .Activities-title {
+    // margin-left: 10%;
+
+    // h3 {
+    //   color: var(--light-text-color, #fff);
+    //   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    //     "Lucida Sans", Arial, sans-serif;
+    //   //   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    //   font-size: 40px;
+    //   font-style: normal;
+    //   font-weight: 700;
+    //   line-height: 50px;
+    //   letter-spacing: 0.2px;
+    // }
+
+    h3 {
+      font-size: 35px;
+      // margin-left: %;
+      color: #000000;
+      text-align: center;
+      text-decoration: wavy;
+      margin: 10px 0; /* Add margins to create spacing around the heading */
+      padding: 0;
+      background-color: #ffffff85; /* Set your desired background color for highlighting */
+      padding: 5px 10px;
+
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    // h3 {
+    //   font-size: 24px;
+
+    //   font-weight: bold;
+    //   text-align: center;
+    //   color: #e8e2e2;
+    //   margin: 10px 0;
+    //   padding: 0;
+    //   position: relative; /* Add position relative to enable absolute positioning of pseudo-element */
+    // }
+
+    // h3::after {
+    //   content: ''; /* Add content to pseudo-element */
+    //   margin-left: 10%;
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -5px; /* Adjust the position to control the underline's offset */
+    //   width: 80%;
+    //   height: 2px;
+    //   background-color: #f0f0f0; /* Set the underline color */
+    // }
+  }
+
+  img { 
+    display: block;
+
+    transition: all 0.3s ease;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+
+  /* Example with increased brightness and contrast */
+  img {
+    filter: brightness(120%) contrast(130%);
+  }
+
+  .image-grid {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .image-container {
+      position: relative;
+      border-radius: 15px;
+      margin: 5px;
+      overflow: hidden;
+      width: 180px; /* Set the desired fixed width */
+      height: 180px; /* Set the desired fixed height */
+      transition: transform 0.2s ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image fits within the container while maintaining aspect ratio */
+        transition: filter 0.2s ease-in-out;
+        display: block;
+
+        transition: all 0.3s ease;
+        border-radius: 8px; /* Add border-radius for rounded corners */
+      }
+
+      .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 44px 70px;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          filter: blur(4px);
+          transform: scale(1.2); /* Increase the image size on hover */
+        }
+
+        .hover-text {
+          opacity: 1;
+        }
+      }
+    }
+
+    #down {
+      margin-top: 5%;
+    }
+  }
+}

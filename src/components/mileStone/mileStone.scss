@@ -1,0 +1,46 @@
+.mileStone-wrapper {
+  margin-top: 8%;
+  .mileStone-title {
+    h2 {
+      margin-left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        text-decoration: wavy;
+        padding: 0;
+        // background-color: #ffffff85; /* Set your desired background color for highlighting */
+        // padding: 5px 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+    }
+    h2 span {
+      position: relative;
+      width: 400%;
+
+      border-bottom: 3px solid #f7b322;
+    }
+    h2 span:before {
+      content: "";
+      position: absolute;
+      margin-top: 10px;
+
+      width: 40%;
+      height: 20px;
+      bottom: -3px;
+      left: 0;
+      background-color: #f7b322;
+    }
+  }
+  .roadmap {
+    margin-top: 5%;
+    margin-left: 15%;
+    // display: flex;
+    // justify-content: center;
+    img {
+      border-radius: 2%;
+    }
+  }
+}
