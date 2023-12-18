@@ -79,7 +79,7 @@ const ChairmansMessage = () => {
       </div>
       <div className="chairmanMsg">
         <div className="chairman-title" data-aos="fade-left">
-          <h3> student experience to the next level</h3>
+          <h3> Student Experience to the Next Level</h3>
         </div>
         <div className="message">
           <h3

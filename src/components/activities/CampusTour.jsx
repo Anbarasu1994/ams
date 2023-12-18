@@ -9,7 +9,7 @@ import sports from "../../assets/sportsImage.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Video from "../../components/video/Video";
+import Video from "../video/Video";
 function CampusTour() {
   const [currentSlide, setCurrentSlide] = useState(1);
 

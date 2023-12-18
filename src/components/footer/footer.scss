@@ -1,148 +1,149 @@
-.footer{
+.footer {
   background-color: #f7b322;
   margin-top: 10%;
-  
 
-.Footer-wrapper {
+  .Footer-wrapper {
+    display: flex;
 
-  display: flex;
-
-  .heading1 {
-    color: rgb(37, 39, 124);
-    padding: 40px;
-    margin-left: 3%;
-    h4 {
-      font-size: 25px;
-      font-weight: 800;
-      font-family: "Fira Sans", sans-serif;
-      position: relative; /* To position the underline properly */
-      display: inline-block; /* To allow for width and space control */
-      margin-bottom: 10px;
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 3px; /* Adjust the underline height */
-        background-color: #fff; /* Adjust the underline color */
-      }
-    }
-    p {
+    .heading1 {
       color: rgb(37, 39, 124);
-      font-weight: 600;
-      font-size: 20px;
-    }
-  }
-  .centre-div {
-    // display:flex ;
-    justify-content: center;
-    color: rgb(37, 39, 124);
-
-    padding: 20px;
-    padding-top: 150px;
-    padding-left: 50px;
-    label {
-      font-size: 20px;
-    }
-  }
-  .end-headline {
-    color: rgb(37, 39, 124);
-
-    .logo-container {
-      display: flex;
-    margin-left: 10%;
-
-      .logo {
-        width: 100px;
-        height: 100px;
-      }
-
-      .title-desc {
-        .title {
-          display: flex;
-          padding-bottom: 0;
-
-          .logo-text {
-            font-style: normal;
-            justify-content: center;
-            letter-spacing: 0.2px;
-
-            h1 {
-              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-              font-weight: 800;
-              margin: 0;
-              padding: 10px;
-
-              font-size: 60px;
-            }
-          }
-          .vertical-line {
-            margin-top: 5%;
-            width: 5px;
-            height: 50px;
-            background-color: rgb(37, 39, 124);
-            // padding: 10px;
-          }
-
-          .logo-txt1 {
-            margin-top: 3%;
-            p {
-              font-size: 18px;
-              font-weight: 800;
-
-              padding: 10px;
-            }
-          }
-        }
-        .title-word {
-          margin-top: 0;
-          color: #fff;
-          font-weight: bold;
-          margin-left: 12%;
+      padding: 40px;
+      margin-left: 3%;
+      h4 {
+        font-size: 25px;
+        font-weight: 800;
+        font-family: "Fira Sans", sans-serif;
+        position: relative; /* To position the underline properly */
+        display: inline-block; /* To allow for width and space control */
+        margin-bottom: 10px;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px; /* Adjust the underline height */
+          background-color: #fff; /* Adjust the underline color */
         }
       }
-    }
-    .contactus {
-      font-size: 20px;
-      font-weight: bold;
-      margin-left: 25%;
-      a {
+      p {
         color: rgb(37, 39, 124);
-        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+    .centre-div {
+      // display:flex ;
+      justify-content: center;
+      color: rgb(37, 39, 124);
+
+      padding: 20px;
+      padding-top: 150px;
+      padding-left: 50px;
+      label {
+        font-size: 20px;
+      }
+    }
+    .end-headline {
+      color: rgb(37, 39, 124);
+
+      .logo-container {
         display: flex;
-        align-items: center;
-        gap: 15px; /* Adjust the space between icon and text */
-      margin-bottom: 10px;
-        
-        .icon-text {
-          vertical-align: middle;
+        margin-left: 10%;
+
+        .logo {
+          width: 100px;
+          height: 100px;
         }
+
+        .title-desc {
+          .title {
+            display: flex;
+            padding-bottom: 0;
+
+            .logo-text {
+              font-style: normal;
+              justify-content: center;
+              letter-spacing: 0.2px;
+
+              h1 {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 800;
+                margin: 0;
+                padding: 10px;
+
+                font-size: 60px;
+              }
+            }
+            .vertical-line {
+              margin-top: 5%;
+              width: 5px;
+              height: 50px;
+              background-color: rgb(37, 39, 124);
+              // padding: 10px;
+            }
+
+            .logo-txt1 {
+              margin-top: 3%;
+              p {
+                font-size: 18px;
+                font-weight: 800;
+
+                padding: 10px;
+              }
+            }
+          }
+          .title-word {
+            margin-top: 0;
+            color: #fff;
+            font-weight: bold;
+            margin-left: 12%;
+          }
+        }
+      }
+      .contactus {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 25%;
+        a {
+          color: rgb(37, 39, 124);
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 15px; /* Adjust the space between icon and text */
+          margin-bottom: 10px;
+
+          .icon-text {
+            vertical-align: middle;
+          }
+        }
+      }
+      .container1 {
+        background-color: #fff;
+        height: 40px;
+        color: black;
+        width: 100%;
+        // margin-left: 10%;
+
+        h4 {
+          font-size: 35px;
+          font-weight: bolder;
+          // margin-left: %;
+          // color: #333;
+          text-align: center;
+          text-decoration: wavy;
+          margin: 10px 0; /* Add margins to create spacing around the heading */
+          padding: 0;
+          background-color: #f0f0f0; /* Set your desired background color for highlighting */
+          padding: 5px 10px;
+
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+        }
+      }
     }
   }
-  .container1 {
-    background-color: #fff;
-    height: 40px;
-    color: black;
-    width: 100%;
-    // margin-left: 10%;
-    
-
-    h4 {
-      font-size: 35px;
-      font-weight: bolder;
-      // margin-left: %;
-      // color: #333;
-      text-align: center;
-      text-decoration: wavy;
-      margin: 10px 0; /* Add margins to create spacing around the heading */
-      padding: 0;
-      background-color: #f0f0f0; /* Set your desired background color for highlighting */
-      padding: 5px 10px;
-
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+  .social-media{
+    margin-left: 20%;
   }
-}
-}
 }

@@ -1,0 +1,120 @@
+.programsVellamalEd {
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #dddddc;
+    height: 99vh;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff; /* Text color */
+      text-align: center;
+      padding: 15px 0; /* Add some padding for spacing */
+      background-color: #1c508c; /* Highlight color - you can change this to your preferred color */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 5px; /* Add rounded corners to the background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Give it a subtle shadow */
+    }
+  
+    .programs-List {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the cards */
+      gap: 20px; /* Add some space between cards */
+      margin-top: 10px;
+      .programs-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Display 3 columns
+        @media screen and (max-width: 768px) {
+          grid-template-columns: repeat(
+            1,
+            1fr
+          ); // Display 1 column in mobile view
+        }
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        .programsCard {
+          background-color: #ffffff;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          padding: 15px;
+          border-radius: 10px;
+          flex: 1; /* Take up equal space in a row */
+          text-align: center;
+          cursor: pointer;
+  
+          h3 {
+            font-size: 17px;
+            font-family: "Open Sans", sans-serif;
+          }
+  
+          &:hover {
+            color: green;
+            transition: 0.5s;
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  
+    .programsPopup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1001;
+  
+      .programsPopupContent {
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        position: relative;
+        width: 90%; /* Adjusted width for mobile */
+        // max-width: 400px; /* Max width for larger screens */
+        max-height: 90%;
+        overflow: auto;
+        z-index: 1002;
+      }
+  
+      .CloseButton {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .programs-List {
+        .programsCard {
+          width: 100%; /* Full width on small screens */
+          margin: 10px 0; /* Vertical margin */
+          max-width: 100%; /* Max width on smaller screens */
+          flex: none; /* Prevent cards from stretching in mobile view */
+  
+          h3 {
+            font-size: 16px; /* Slightly smaller font for mobile */
+          }
+        }
+      }
+      .programs-grid {
+        grid-template-columns: repeat(1, 1fr); // Display 1 column in mobile view
+      }
+      .programsPopup {
+        .programsPopupContent {
+          max-width: 95%;
+          max-height: 95%;
+          padding: 10px; // Adjusted padding for better mobile vie
+        }
+      }
+    }
+  }
+  

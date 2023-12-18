@@ -3,7 +3,6 @@ import "./carousel.scss";
 
 import lib from "../../assets/library.jpg"
 import nurse from "../../assets/Nursing1.jpg"
-// import amsdrone from "../../assets/"
 
 
 const slides = [

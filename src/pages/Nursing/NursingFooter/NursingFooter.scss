@@ -1,0 +1,97 @@
+.NursingFoot {
+    background-color: rgb(60,0,62);
+    padding: 30px 0px;
+    .list-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-left: 1%;
+      .list-1,
+      .list-2,
+      .list-3 {
+        flex: 1;
+        max-width: 300px;
+        margin: 0 20px;
+      }
+      h3 {
+        color: white;
+        font-weight: 700;
+        font-style: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+      }
+      h4 {
+        color: white;
+        line-height: 30px;
+        font-weight: 700;
+        font-style: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+      }
+      h2 {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-style: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+        margin-left: 0;
+      }
+      .search-container {
+        display: flex;
+        align-items: center;
+        input[type="text"] {
+          flex: 1;
+          padding: 10px;
+          border: 1px solid #ccc;
+        }
+        button[type="submit"] {
+          background-color: rgb(156, 87, 158);
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+      .address {
+        display: flex;
+        align-items: center;
+        p {
+          color: rgb(255, 255, 255);
+          font-weight: 700;
+          font-style: bold;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+          line-height: 24px;
+        }
+      }
+    }
+    .socia1-link {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      color: rgb(0, 0, 0);
+      background-color: white;
+      height: 40px;
+      .follow {
+      }
+      .Links{
+        margin-top: 6px;
+        margin-left: auto;
+        // color: #AE0000;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .list-container {
+        flex-direction: column;
+        align-items: center;
+  
+        .list-1,
+        .list-2,
+        .list-3 {
+          max-width: none;
+          margin: 20px 0;
+        }
+      }
+    }
+  }

@@ -1,6 +1,6 @@
 // TestimonialsCarousel.scss
 
-.gtco-testimonials {
+.gtco-testimonials1 {
   margin-top: 10%;
     // position: relative;
     // margin-top: 30px;
@@ -72,14 +72,14 @@
     }
   
     .card {
-      // background: #fff;
-      // // box-shadow: 0 8px 30px -7px #c9dff0;
+      background:none;
+      // box-shadow: 0 8px 30px -7px #c9dff0;
       // margin: 0 20px;
       // padding: 0 10px;
       // border-radius: 20px;
       // width: 400px;
       // height: 400px;
-      // border: 0;
+      border: 0 !important;
       
   
       .card-img-top {

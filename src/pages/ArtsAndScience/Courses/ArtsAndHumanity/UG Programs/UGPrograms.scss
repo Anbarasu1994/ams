@@ -1,0 +1,129 @@
+/* UGPrograms.scss */
+
+.programs-wrap {
+  margin-top: 0;
+  background-color: #ffe6d5;
+  padding: 10px;
+  padding-top: 20px;
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(184, 16, 16);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .programs-List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+
+      .programsCard {
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        padding: 15px;
+        border-radius: 10px;
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 17px;
+          font-family: "Open Sans", sans-serif;
+          margin-top: 10px;
+          color: #333;
+        }
+
+        &:hover {
+          color: green;
+          transition: 0.5s;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .programsPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .programsPopupContent {
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      position: relative;
+      width: 90%;
+      max-height: 90%;
+      overflow: auto;
+    }
+
+    .CloseButton {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 40px;
+      cursor: pointer;
+      color: #333;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .programs-List {
+      .programsCard {
+        width: 100%;
+        margin: 10px 0;
+        max-width: 100%;
+        flex: none;
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+    .programs-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .programsPopup {
+      .programsPopupContent {
+        max-width: 95%;
+        max-height: 95%;
+        padding: 10px;
+      }
+    }
+  }
+}
+

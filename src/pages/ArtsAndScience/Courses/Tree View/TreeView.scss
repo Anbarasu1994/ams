@@ -1,0 +1,51 @@
+.Box {
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #f7f8fa; /* Soft grayish background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px !important;
+
+  max-width: 600px;
+  margin: 0 auto;
+
+  .TreeView {
+    margin-top: 20px;
+
+    .MuiTreeItem-root {
+      border-radius: 10px; /* Slightly rounded corners */
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-bottom: 16px;
+
+      &.Mui-selected {
+        background-color: #e2e6ef; /* Lighter selected item background */
+        transform: scale(1.02);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover {
+        background-color: #edf0f5; /* Lighter hover background */
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      }
+
+      .MuiTreeItem-content {
+        padding: 20px;
+        cursor: pointer;
+        font-size: 25px !important;
+        font-weight: 500;
+        color: #333; /* Darker text color */
+        display: flex;
+        align-items: center;
+        transition: color 0.3s ease;
+
+        .icon {
+          margin-right: 12px;
+          font-size: 24px;
+          color: #6c5ce7; /* Accent color for icons */
+        }
+      }
+    }
+  }
+}

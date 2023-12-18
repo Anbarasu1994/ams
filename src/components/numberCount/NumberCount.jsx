@@ -34,7 +34,7 @@ const NumberCount = () => {
             {counts.map((count, index) => (
               <div
                 key={index}
-                className="col-lg-3 col-sm-6 wow fadeInDown cont"
+                className="col-md-3 wow fadeInDown cont"
                 data-wow-delay={(index + 1) * 0.2 + "s"}
               >
                 <div className="service-item text-center pt-3">
@@ -53,7 +53,6 @@ const NumberCount = () => {
         </div>
         <div className="horizontal-line1"></div>
         <div className="horizontal-line2"></div>
-
       </div>
     </div>
   );

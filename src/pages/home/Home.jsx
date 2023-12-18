@@ -7,11 +7,9 @@ import Activities from "../../components/activities/Activities";
 import Administration from "../../components/administration/Administration";
 import CollegeGroup from "../../components/collegeGroup/CollegeGroup";
 import Carousel from "../../components/carousel1/Carousel";
-import TopperPerformer from "../../components/topperPerformer/TopperPerformer.jsx";
 import ImageGallery from "../../components/imageGallery/ImageGallery";
 import MileStone from "../../components/mileStone/MileStone";
 import Footer from "../../components/footer/Footer";
-import TopperCarousel from "../../components/toppers/TopperCarousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TestimonialsCarousel from "../../components/topperPerformer/TestimonialsCarousel";
 import CampusTour from "../../components/activities/CampusTour";
@@ -23,6 +21,7 @@ import AddChairmanMessage from "../../components/chairmansMessage/AddChairmanMes
 import AddLinkForm from "../../components/linkWithThumbnail/AddLinkForm";
 import LinkWithThumbnail from "../../components/linkWithThumbnail/LinkWithThumbnail";
 import MarqueeForm from "../../components/marquee/MarqueeForm";
+import StaffCarousel from "../../components/staffs/StaffCarousel";
 
 const Home = () => {
   return (
@@ -49,6 +48,7 @@ const Home = () => {
       {/* <Administration/> */}
       {/* <TopperPerformer/> */}
       {/* <TopperCarousel/> */}
+      <StaffCarousel/>
       <TestimonialsCarousel />
       {/* <ImageGallery/> */}
       <MileStone />

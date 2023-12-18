@@ -1,0 +1,83 @@
+.Student-Life3 {
+  margin-top: 0px;
+  // background-color: rgb(245, 183, 248);
+  padding: 10px 0;
+  min-height: 800px;
+
+  .Life-details3 {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+
+    .studentlifebg {
+      img {
+        border-radius: 20px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-left: 20%;
+        
+        @media (max-width: 768px) {
+          margin-left: 0; /* Center the image horizontally on mobile */
+          display: flex;
+          justify-content: center; /* Center the image vertically on mobile */
+          align-items: center; /* Center the image vertically on mobile */
+        }
+      }
+    }
+
+    .StudentLife-list3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      width: 700px;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          line-height: 70px;
+          font-weight: 400;
+          font-style: bold;
+          font-size: 24px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+
+          svg {
+            color: blue;
+            font-size: 44px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Life-details3 {
+      flex-direction: column;
+      align-items: center;
+
+      .studentlifebg {
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .StudentLife-list3 {
+        width: auto;
+
+        ul {
+          li {
+            line-height: normal;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

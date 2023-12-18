@@ -47,7 +47,7 @@ const TestimonialsCarousel = () => {
   ];
 
   return (
-    <div className="gtco-testimonials">
+    <div className="gtco-testimonials1">
       <h2  data-aos="fade-right"><span>TESTIMONIALS </span></h2>
       <OwlCarousel
         className="owl-carousel1 owl-theme"

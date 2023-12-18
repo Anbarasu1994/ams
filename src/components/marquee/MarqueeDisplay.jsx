@@ -24,7 +24,9 @@ const MarqueeDisplay = () => {
   }, []);
 
   return (
-    <div className="marquee-display">
+    <div className="marquee-display" style={{
+      color:"white"
+    }}>
    
       <marquee className="marquee-text"  behavior="" direction="ritght-to-left" >
         {marquees.length > 0 ? <a>{marquees[0].text}</a> : <p>No marquee available</p>}

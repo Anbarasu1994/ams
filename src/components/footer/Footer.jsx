@@ -3,7 +3,7 @@ import "./footer.scss";
 import ams from "../../assets/ams.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Email } from "@mui/icons-material";
+
 import EmailIcon from "@mui/icons-material/Email";
 function Footer() {
   return (
@@ -125,35 +125,39 @@ function Footer() {
             </div>
 
             <div className="col-md-6 text-center text-md-end">
-              <div className="d-flex pt-2" style={{ color: "black" }}>
-                <a href="" style={{
+              <div className="social-media">
+                {" "}
+                <div className="d-flex pt-2">
+                  {/* <a href="" style={{
                   fontSize:"18px",
-                  fontWeight:"600"
-                }}>FOLLOW US ON : </a>
-                <a href="#" className="btn btn-outline-light btn-social">
-                  <i
-                    className="fab fa-twitter"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </a>
-                <a href="#" className="btn btn-outline-light btn-social">
-                  <i
-                    className="fab fa-facebook-f"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </a>
-                <a href="#" className="btn btn-outline-light btn-social">
-                  <i
-                    className="fab fa-youtube"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </a>
-                <a href="#" className="btn btn-outline-light btn-social">
-                  <i
-                    className="fab fa-linkedin-in"
-                    style={{ fontSize: "24px" }}
-                  ></i>
-                </a>
+                  fontWeight:"600",
+                  color:"black"
+                }}>FOLLOW US ON : </a> */}
+                  <a href="#" className="btn btn-outline-light btn-social">
+                    <i
+                      className="fab fa-twitter"
+                      style={{ fontSize: "24px", color: "black" }}
+                    ></i>
+                  </a>
+                  <a href="#" className="btn btn-outline-light btn-social">
+                    <i
+                      className="fab fa-facebook-f"
+                      style={{ fontSize: "24px", color: "black" }}
+                    ></i>
+                  </a>
+                  <a href="#" className="btn btn-outline-light btn-social">
+                    <i
+                      className="fab fa-youtube"
+                      style={{ fontSize: "24px", color: "black" }}
+                    ></i>
+                  </a>
+                  <a href="#" className="btn btn-outline-light btn-social">
+                    <i
+                      className="fab fa-linkedin-in"
+                      style={{ fontSize: "24px", color: "black" }}
+                    ></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
